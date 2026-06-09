@@ -34,3 +34,6 @@ def department(request):
 
 def confirmation(request):
     return render(request,'confirmation.html')
+
+def homepage(request):
+    return render(request,'home.html')

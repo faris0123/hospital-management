@@ -10,5 +10,6 @@ urlpatterns = [
     path('doctors/',views.doctors, name = 'doctors'),
     path('contact/',views.contact , name = 'contact'),
     path('department/',views.department ,name = 'department'),
-    path('cnfirm/',views.confirmation,name='confirm')
+    path('cnfirm/',views.confirmation,name='confirm'),
+    path('home/',views.homepage),
 ]
