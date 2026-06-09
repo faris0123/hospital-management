@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">
+            Welcome to KIMS Hospital
+        </h1>
+        <p class="lead text-muted">
+            Providing quality healthcare with compassion and excellence.
+        </p>
+    </div>
+
+    <div class="card shadow-lg border-0 rounded-4">
+        <div class="card-body p-5">
+
+            <h3 class="mb-3">About Us</h3>
+
+            <p>
+                KIMS Hospital is committed to delivering high-quality medical care
+                through advanced technology, experienced doctors, and dedicated staff.
+                Our goal is to ensure the well-being and comfort of every patient.
+            </p>
+
+            <p>
+                We offer a wide range of healthcare services including cardiology,
+                neurology, orthopedics, pediatrics, and emergency care. Our team
+                works together to provide personalized treatment and support.
+            </p>
+
+            <p>
+                With a patient-first approach, we strive to create a safe and
+                welcoming environment where individuals and families can receive
+                the best possible healthcare services.
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

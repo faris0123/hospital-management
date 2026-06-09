@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <h1 class="text-center text-white mb-5">
+        Our Departments
+    </h1>
+
+    <div class="row g-4">
+
+        {% for i in dept %}
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card department-card border-0 shadow-lg h-100">
+
+                <div class="card-body">
+
+                    <h3 class="card-title fw-bold text-primary mb-3">
+                        {{ i.dp_name }}
+                    </h3>
+
+                    <p class="card-text text-muted">
+                        {{ i.dp_description }}
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endblock %}
